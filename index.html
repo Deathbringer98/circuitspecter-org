@@ -88,7 +88,15 @@
         <h2>Upcoming Game</h2>
         <div class="game-card">
           <div class="game-art">
-            <img src="media/ss1.png" alt="Asteroid Cats gameplay screenshot" class="game-art-img">
+            <div class="carousel" id="gameCarousel">
+              <div class="carousel-track">
+                <img src="media/ss2.png" alt="Asteroid Cats gameplay screenshot" class="carousel-slide game-art-img active">
+                <img src="media/ss1.png" alt="Asteroid Cats gameplay screenshot" class="carousel-slide game-art-img">
+              </div>
+              <button type="button" class="carousel-btn carousel-prev" aria-label="Previous screenshot">&#10094;</button>
+              <button type="button" class="carousel-btn carousel-next" aria-label="Next screenshot">&#10095;</button>
+              <div class="carousel-dots"></div>
+            </div>
           </div>
           <div class="game-details">
             <h3>Asteroid Cats</h3>
