@@ -1,0 +1,400 @@
+:root {
+  --black: #0a0a0a;
+  --near-black: #141414;
+  --dark-gray: #1e1e1e;
+  --mid-gray: #4a4a4a;
+  --light-gray: #b3b3b3;
+  --white: #ffffff;
+  --max-width: 1100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  background: var(--black);
+  color: var(--white);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin: 0 0 0.5em;
+}
+
+p {
+  color: var(--light-gray);
+  margin: 0 0 1em;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(10, 10, 10, 0.9);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--dark-gray);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 1.1rem;
+  letter-spacing: 0.08em;
+}
+
+.logo span {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 400;
+  color: var(--light-gray);
+  letter-spacing: 0.3em;
+}
+
+.site-nav {
+  display: flex;
+  gap: 32px;
+}
+
+.site-nav a {
+  color: var(--light-gray);
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.site-nav a:hover {
+  color: var(--white);
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 26px;
+  height: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.nav-toggle span {
+  height: 2px;
+  width: 100%;
+  background: var(--white);
+  display: block;
+}
+
+/* Hero */
+.hero {
+  padding: 120px 0 100px;
+  border-bottom: 1px solid var(--dark-gray);
+}
+
+.hero-inner {
+  max-width: 720px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.8rem;
+  color: var(--light-gray);
+  margin-bottom: 16px;
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  line-height: 1.15;
+}
+
+.hero-sub {
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 2px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  transition: all 0.2s ease;
+  border: 1px solid var(--white);
+}
+
+.btn-primary {
+  background: var(--white);
+  color: var(--black);
+}
+
+.btn-primary:hover {
+  background: transparent;
+  color: var(--white);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--white);
+}
+
+.btn-outline:hover {
+  background: var(--white);
+  color: var(--black);
+}
+
+/* Sections */
+.section {
+  padding: 90px 0;
+  border-bottom: 1px solid var(--dark-gray);
+}
+
+.section-alt {
+  background: var(--near-black);
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+/* About */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 60px;
+}
+
+.about-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.stat {
+  border-left: 2px solid var(--white);
+  padding-left: 18px;
+}
+
+.stat-num {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.stat-label {
+  color: var(--light-gray);
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Gameplay Preview */
+.section-intro {
+  max-width: 640px;
+  margin-bottom: 40px;
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.media-block h3 {
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+}
+
+.media-player {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: var(--near-black);
+  border: 1px solid var(--dark-gray);
+  display: block;
+}
+
+.media-caption {
+  font-size: 0.85rem;
+  margin-top: 12px;
+  font-style: italic;
+}
+
+/* Game card */
+.game-card {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 48px;
+  align-items: center;
+  background: var(--black);
+  border: 1px solid var(--dark-gray);
+  padding: 40px;
+}
+
+.game-art {
+  aspect-ratio: 4 / 3;
+  background: repeating-linear-gradient(
+    45deg,
+    var(--dark-gray),
+    var(--dark-gray) 10px,
+    var(--near-black) 10px,
+    var(--near-black) 20px
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--mid-gray);
+  overflow: hidden;
+}
+
+.game-art-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.game-art-label {
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 0 20px;
+  color: var(--white);
+}
+
+.game-details h3 {
+  font-size: 1.8rem;
+}
+
+.status-badge {
+  display: inline-block;
+  border: 1px solid var(--white);
+  color: var(--white);
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  margin-bottom: 16px;
+}
+
+.platform-list {
+  display: flex;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.platform-badge {
+  border: 1px solid var(--mid-gray);
+  color: var(--light-gray);
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+}
+
+.game-footnote {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* Contact */
+.contact-inner {
+  text-align: center;
+  max-width: 560px;
+}
+
+.contact-inner .btn {
+  margin-top: 12px;
+}
+
+/* Footer */
+.site-footer {
+  padding: 32px 0;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.footer-inner p {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: flex;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--near-black);
+    flex-direction: column;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    border-bottom: 1px solid var(--dark-gray);
+    transition: max-height 0.25s ease;
+  }
+
+  .site-nav.open {
+    max-height: 240px;
+  }
+
+  .site-nav a {
+    padding: 16px 24px;
+    border-top: 1px solid var(--dark-gray);
+  }
+
+  .about-grid,
+  .game-card,
+  .media-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 90px 0 70px;
+  }
+}
