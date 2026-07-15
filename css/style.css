@@ -200,6 +200,42 @@ a {
   gap: 60px;
 }
 
+.free-game-card {
+  margin-top: 36px;
+  padding: 28px;
+  background: var(--near-black);
+  border: 1px solid var(--dark-gray);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.free-game-copy {
+  flex: 1 1 260px;
+}
+
+.free-game-eyebrow {
+  display: inline-block;
+  color: var(--light-gray);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.free-game-card h3 {
+  margin: 0 0 8px;
+}
+
+.free-game-card p {
+  margin: 0;
+  color: var(--light-gray);
+  font-size: 0.95rem;
+}
+
 .about-stats {
   display: flex;
   flex-direction: column;
@@ -222,6 +258,53 @@ a {
   font-size: 0.9rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+}
+
+/* Volunteers */
+.volunteer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.volunteer-role {
+  padding: 24px;
+  background: var(--near-black);
+  border: 1px solid var(--dark-gray);
+  border-radius: 8px;
+}
+
+.volunteer-role h3 {
+  margin: 0 0 10px;
+}
+
+.volunteer-role p {
+  margin: 0;
+  color: var(--light-gray);
+}
+
+.volunteer-note {
+  max-width: 720px;
+  border-left: 2px solid var(--white);
+  padding-left: 20px;
+  margin-bottom: 32px;
+}
+
+.volunteer-note h3 {
+  margin: 0 0 12px;
+}
+
+.volunteer-note p {
+  color: var(--light-gray);
+}
+
+.volunteer-note p:last-child {
+  margin-bottom: 0;
+}
+
+.volunteer-cta {
+  margin-top: 8px;
 }
 
 /* Gameplay Preview */
@@ -439,6 +522,22 @@ a {
   font-size: 0.85rem;
 }
 
+.footer-game {
+  flex-basis: 100%;
+  color: var(--light-gray);
+}
+
+.footer-game a {
+  color: var(--white);
+  text-decoration: none;
+  border-bottom: 1px solid var(--mid-gray);
+  transition: border-color 0.2s ease;
+}
+
+.footer-game a:hover {
+  border-color: var(--white);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .nav-toggle {
@@ -470,7 +569,8 @@ a {
 
   .about-grid,
   .game-card,
-  .media-grid {
+  .media-grid,
+  .volunteer-grid {
     grid-template-columns: 1fr;
   }
 
