@@ -303,6 +303,30 @@ a {
   margin-bottom: 0;
 }
 
+.volunteer-apply {
+  max-width: 720px;
+  margin-bottom: 24px;
+}
+
+.volunteer-apply h3 {
+  margin: 0 0 12px;
+}
+
+.volunteer-apply p {
+  margin: 0 0 12px;
+  color: var(--light-gray);
+}
+
+.volunteer-apply-list {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--light-gray);
+}
+
+.volunteer-apply-list li {
+  margin-bottom: 8px;
+}
+
 .volunteer-cta {
   margin-top: 8px;
 }
