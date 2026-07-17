@@ -331,6 +331,12 @@ a {
   margin-top: 8px;
 }
 
+.volunteer-cta-note {
+  margin: 12px 0 0;
+  font-size: 0.85rem;
+  color: var(--light-gray);
+}
+
 /* Gameplay Preview */
 .section-intro {
   max-width: 640px;
